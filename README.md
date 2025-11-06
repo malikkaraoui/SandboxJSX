@@ -1,16 +1,61 @@
-# React + Vite
+# SandboxJSX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un projet React + Vite pour apprendre et expérimenter avec JSX et les composants React.
 
-Currently, two official plugins are available:
+## 🚀 Fonctionnalités
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Application React** avec Vite pour le hot reloading
+- **Liste interactive de légumes** avec gestion des clics
+- **Ajout dynamique** de nouveaux légumes via input et bouton
+- **Gestionnaire d'état** avec useState pour une liste mutable
+- **Architecture modulaire** avec exports nommés
+- **IDs uniques** pour chaque élément de liste
 
-## React Compiler
+## 📁 Structure du projet
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+├── App.jsx                    # Composant principal
+├── ClickableVegetableList.jsx # Liste interactive avec useState
+├── VegetableList.jsx          # Liste simple (non utilisée)
+├── main.jsx                   # Point d'entrée React
+└── App.css                    # Styles
+```
 
-## Expanding the ESLint configuration
+## 🛠️ Installation et lancement
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Installer les dépendances
+npm install
+
+# Lancer le serveur de développement
+npm run dev
+```
+
+L'application sera accessible sur `http://localhost:5173` (ou le port suivant si occupé).
+
+## 🎯 Utilisation
+
+1. **Cliquer sur un légume** → Affiche une alerte avec le nom du légume
+2. **Ajouter un légume** → Taper dans l'input et cliquer "Ajouter" ou appuyer sur Entrée
+3. **Navigation** → Chaque élément a un ID unique (li0, li1, li2, etc.)
+
+## 🧪 Technologies utilisées
+
+- **React 18** avec hooks (useState)
+- **Vite** pour le build et le dev server
+- **ESLint** pour la qualité du code
+- **JSX** avec exports nommés pour la modularité
+
+## 📝 Concepts React démontrés
+
+- Composants fonctionnels
+- Gestion d'état avec useState
+- Event handlers (onClick, onChange, onKeyPress)
+- Rendu conditionnel et listes dynamiques
+- Props et composition de composants
+- Exports/imports nommés pour la réutilisabilité
+
+---
+
+*Projet d'apprentissage React par Malik Karaoui*
